@@ -5,6 +5,7 @@ import Post from 'App/Models/Post'
 export default class PostsController {
   public async index({}: HttpContextContract) {
     const posts = await Post.all()
+    //const posts = await Post.query().orderBy('id') busca ordenada por id
 
     return posts
   }
