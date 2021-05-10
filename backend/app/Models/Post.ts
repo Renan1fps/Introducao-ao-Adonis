@@ -9,7 +9,7 @@ export default class Post extends BaseModel {
   public title: string
 
   @column()//@column({columnName: 'content'}) caso queria mudar o nome da tabela no sistema mas no banco continua a mesma
-  public body: string
+  public content: string
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
